@@ -4,6 +4,7 @@ import { navData } from '../data/nav-data';
 
 /* Importing Components */
 import Gallery from './Gallery';
+import Main from './Main';
 
 
 function Home() {
@@ -30,16 +31,20 @@ function Home() {
     return (
         <>
             <nav className={`${isNavbarVisible ? "visible" : ""}`}>
-                <img className="" src={navData.logo} alt="spring" />
                 <div className="nav-items">
+                <h1 className ="main-logo">UIPrime</h1>
                     <a href="/"> Home</a>
-                    <a href="/"> About</a>
-                    <a href="/"> Contact</a>
-                    <a href="/"> Projects</a>
+                    <a href="/"> Discover</a>
+                    <a href="/">Blogs</a>
+                    <a href="/">Challenges</a>
+                </div>
+                <div className="nav-items">
+                    <a href="/">Get Started</a>
+                    <a href="/">Github</a>
                 </div>
             </nav>
             <section>
-                <Gallery />
+                <Main />
             </section>
 
         </>
