@@ -75,11 +75,16 @@ nav {
         margin: 20px auto;
     }
     button {
+        text-align: center;
         padding: 10px 50px;
-        margin: 30px 20px;
+        margin: 30px 10px;
         border-radius: 20px;
         border: none;
         background-color: #0071e2;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        &:hover {
+            transform: scale(1.05);
+        }
     }
     .blog-btn {
         padding: 10px 50px;
@@ -87,7 +92,20 @@ nav {
         border-radius: 20px;
         border: none;
         background-color: #171717;
-        border: 2px solid #0071e2;
+        border: 2px solid rgb(138, 171, 205);
+    }
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    .about-text {
+        background-color: #bbd5b5;
+        width: 40%;
+    }
+    .about-main {
+        background-color: #f4f4f4;
+        width: 60%;
     }
 }
 

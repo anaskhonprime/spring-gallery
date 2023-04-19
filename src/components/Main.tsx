@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import { springImages, buttons } from "../data/spring";
+import { MAIN } from "../assets/index";
 
 function Main() {
 
@@ -43,8 +44,19 @@ function Main() {
                         <button> Discover</button>
                         <button className='blog-btn'> Blogs</button>
                     </div>
-                   
+
                 </div>
+                <div className="row g-0">
+                    <div className="col-lg-5">
+                        <div className=''>
+                            Test
+                        </div>
+                        <div className='col-lg-7'>
+                            <img src={MAIN} alt="" />
+                        </div>
+                    </div>
+                </div>
+                
             </section>
         </>
     );
